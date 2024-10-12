@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:src="@drawable/frutos"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="34dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        <TextView
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Somos Jenali"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Somos una empresa chillaneja experta en la importación, comercialización y exportación de frutos secos, frutas deshidratadas, semillas, cereales y chocolates caracterizándose por sus altos estándares de higiene y frescura."/>
+
+
+        <Button
+            android:id="@+id/buttonmap"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center"
+            android:text="Nuestras Tiendas"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="612dp" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
