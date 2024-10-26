@@ -1,19 +1,9 @@
 package cl.virginio.gomez.frutos.secos.frutossecosapp;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.Button;
-
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentActivity;
+
+import android.os.Bundle;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -22,49 +12,26 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import cl.virginio.gomez.frutos.secos.frutossecosapp.databinding.ActivityMapsBinding;
+import cl.virginio.gomez.frutos.secos.frutossecosapp.databinding.ActivityMapsV2Binding;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivityV2 extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private ActivityMapsBinding binding;
+    private ActivityMapsV2Binding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d("MAPA", "Inicia mapa");
         super.onCreate(savedInstanceState);
 
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.mapa1);
-        mapFragment.getMapAsync(this);
-
-/*
- LayoutInflater inflater = getLayoutInflater();
-        binding = ActivityMapsBinding.inflate(inflater);
-        View view = binding.getRoot();
-        setContentView(view);
+        binding = ActivityMapsV2Binding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.mapa1);
+                .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        //this.setTitle("Nuestras Tiendas");
 
-        EdgeToEdge.enable(this);
-        Button buttonVolver = findViewById(R.id.buttonVolver1);
-
-
-        buttonVolver.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Log.d("BUTTONS", "Boton presionado para volver");
-                Intent intent = new Intent(MapsActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        //setContentView(R.layout.activity_maps);
-*/
     }
 
 

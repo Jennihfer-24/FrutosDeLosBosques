@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">FrutosSecosApp</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps_v2">MapsActivityV2</string>
 
 </resources>
