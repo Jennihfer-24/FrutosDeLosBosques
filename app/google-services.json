@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "521085269126",
+    "project_id": "app-frutos-secos",
+    "storage_bucket": "app-frutos-secos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521085269126:android:5137b898b98891e4d24d07",
+        "android_client_info": {
+          "package_name": "cl.virginio.gomez.frutos.secos.frutossecosapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUu7nS-7as_S3ADIZ2IRW9MAl7wormhxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

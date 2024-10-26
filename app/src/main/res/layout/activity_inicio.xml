@@ -18,7 +18,7 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="460dp"
+            android:layout_height="260dp"
             android:src="@drawable/frutos"
             tools:layout_editor_absoluteX="5dp"
             tools:layout_editor_absoluteY="34dp"
@@ -45,9 +45,21 @@
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:gravity="center"
-            android:text="Nuestras Tiendas"
-            tools:layout_editor_absoluteX="77dp"
-            tools:layout_editor_absoluteY="612dp" />
+            android:text="Nuestras Tiendas"/>
+
+        <Button
+            android:id="@+id/buttonregistroclientes"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center"
+            android:text="Registro Cliente"/>
+
+        <Button
+            android:id="@+id/buttonproductos"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center"
+            android:text="Nuestros Productos"/>
     </LinearLayout>
 
 

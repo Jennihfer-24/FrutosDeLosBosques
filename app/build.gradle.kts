@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+    alias(libs.plugins.gms.google.services)
 }
 
 android {
@@ -48,5 +50,14 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation (libs.play.services.maps)
+    implementation(libs.firebase.bom)
+    implementation(libs.firebase.analytics)
+    implementation (libs.firebase.ui.firestore)
+    implementation(libs.google.services)
+    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.auth)
+    //noinspection GradleDependency
+    implementation(libs.firebase.storage)
+
 
 }
